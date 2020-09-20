@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  test-api:
+    container_name: test-api
+    image: razvanst/nodejs-in-docker:latest
+    ports:
+      - 3000:3000
+  test-api2:
+    container_name: test-api2
+    image: razvanst/nodejs-in-docker:latest
+    ports:
+      - 3002:3000
